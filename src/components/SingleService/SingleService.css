@@ -1,0 +1,35 @@
+.singleService {
+  max-width: 30% !important;
+  margin: 1.1rem;
+  padding: 2rem !important;
+  transition: 0.6s ease;
+  background-color: white;
+  border-radius: 10px;
+}
+.singleService:hover {
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.08);
+}
+.singleService h4 {
+  font-size: 21px;
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+.singleService p {
+  color: #777777;
+  line-height: 26px;
+  font-size: 16px;
+  /* text-align: justify; */
+}
+.singleService:hover svg.svg-inline--fa.fa-laptop-code.fa-w-20,
+.singleService:hover svg.svg-inline--fa.fa-desktop.fa-w-18,
+.singleService:hover svg.svg-inline--fa.fa-laptop-house.fa-w-20 {
+  color: #766dff;
+}
+svg.svg-inline--fa.fa-laptop-code.fa-w-20,
+svg.svg-inline--fa.fa-desktop.fa-w-18,
+svg.svg-inline--fa.fa-laptop-house.fa-w-20 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #dedddd;
+  transition: 0.6s ease;
+}

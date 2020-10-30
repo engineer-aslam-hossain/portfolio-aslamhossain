@@ -1,0 +1,74 @@
+.contact {
+  padding: 5rem 0;
+  background: linear-gradient(to right, #766dff, #88f2ff 100%);
+}
+.contactHead h3 {
+  font-size: 2.5rem;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.contactHead p {
+  color: #fefefe;
+}
+
+.contact-details {
+  max-width: 30% !important;
+  margin: 1.1rem;
+  padding: 2rem !important;
+  border-radius: 15px;
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.08);
+}
+.contact-details h4 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  margin: 1.5rem 0;
+}
+.contact-details p {
+  color: white;
+  letter-spacing: 0.3px;
+}
+p.blockIcon {
+  border: 1px solid #fefefe;
+  margin: 0;
+  padding: 1rem;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+}
+
+p.blockIcon svg.svg-inline--fa.fa-home.fa-w-18,
+p.blockIcon svg.svg-inline--fa.fa-phone-alt.fa-w-16,
+p.blockIcon svg.svg-inline--fa.fa-envelope.fa-w-16 {
+  font-size: 2rem;
+  margin: 0;
+  color: #ffff3f;
+}
+
+.contactForm h3 {
+  color: white;
+  font-size: 1.8rem;
+}
+
+.contactForm {
+  max-width: 35rem;
+  margin: 0 auto;
+}
+.contactForm p {
+  color: white;
+  letter-spacing: 1px;
+  margin-bottom: 3rem;
+}
+.contactForm input {
+  height: 3.5rem;
+}
+.contactForm textarea {
+  height: 7rem !important;
+}
+
+.copyRight {
+  color: white;
+  letter-spacing: 0.4px;
+}

@@ -1,0 +1,32 @@
+import {
+  faLaptopCode,
+  faDesktop,
+  faLaptopHouse,
+} from '@fortawesome/free-solid-svg-icons';
+
+const fakeService = [
+  {
+    id: 1,
+    icon: faLaptopCode,
+    name: 'Front End Web App',
+    details:
+      'I can make a Fully responsive front end static website with react and react web app performance are really really good',
+  },
+
+  {
+    id: 2,
+    icon: faDesktop,
+    name: 'E-commerce Web App',
+    details:
+      'I can make a Fully responsive front end static website with react and react web app performance are really really good',
+  },
+  {
+    id: 3,
+    icon: faLaptopHouse,
+    name: 'Full Stack Web App',
+    details:
+      'I can make a Fully responsive front end static website with react and react web app performance are really really good',
+  },
+];
+
+export default fakeService;
