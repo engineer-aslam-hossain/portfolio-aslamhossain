@@ -10,9 +10,8 @@ const Service = () => {
           <div className='serviceHeader d-flex align-items-center justify-content-center flex-column'>
             <h2>offering to my clients</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
-              error ad minima ex eos a consequuntur dignissimos autem quos
-              aliquam?
+              I can make just front end or full stack Website for you as per
+              instruction
             </p>
           </div>
           <div className='row'>

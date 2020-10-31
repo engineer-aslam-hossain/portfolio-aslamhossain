@@ -5,7 +5,7 @@ import './Contact.css';
 import { Form } from 'react-bootstrap';
 const Contact = () => {
   return (
-    <section className='contact'>
+    <section className='contact' id='contact'>
       <div className='container'>
         <div className='contactHead d-flex flex-column align-items-center mb-5'>
           <h3>Contact</h3>
@@ -21,7 +21,7 @@ const Contact = () => {
                 (contact.id === 3 && 'fade-up-left')
               }
               data-aos-duration='900'
-              data-aos-delay='500'
+              data-aos-delay='200'
               key={contact.id}>
               <p className='blockIcon'>
                 <FontAwesomeIcon icon={contact.icon} />

@@ -29,6 +29,7 @@
 .contact-details p {
   color: white;
   letter-spacing: 0.3px;
+  font-size: 0.9rem;
 }
 p.blockIcon {
   border: 1px solid #fefefe;
@@ -71,4 +72,18 @@ p.blockIcon svg.svg-inline--fa.fa-envelope.fa-w-16 {
 .copyRight {
   color: white;
   letter-spacing: 0.4px;
+}
+
+@media screen and (max-width: 576px) {
+  .contact {
+    padding: 2rem;
+  }
+  .contact-details {
+    max-width: 88% !important;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .contact-details {
+    max-width: 92% !important;
+  }
 }

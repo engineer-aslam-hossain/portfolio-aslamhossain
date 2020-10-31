@@ -94,3 +94,48 @@ button.educationBtn:focus {
 .secondExp {
   margin: 4.2rem 0;
 }
+
+@media screen and (max-width: 576px) {
+  .experience {
+    padding: 2rem;
+  }
+  .toggleButtons {
+    display: flex;
+    flex-direction: column;
+  }
+  button.experienceBtn {
+    margin: 1rem 0;
+  }
+  .col.py-5.years.mr-5.px-0.aos-init.aos-animate {
+    margin-right: 1rem !important;
+  }
+  .line.col {
+    padding: 0;
+    height: 35rem;
+  }
+  .years .firstP::before,
+  .secondP::before,
+  .thirdP:before {
+    right: -1.65rem;
+    margin-top: 2.5rem;
+  }
+  .years .firstP::after,
+  .secondP::after,
+  .thirdP::after {
+    right: -1.4rem;
+    margin-top: 20px;
+  }
+  .secondExp {
+    margin: 2.2rem 0;
+  }
+}
+@media screen and (min-width: 416px) and (max-width: 576px) {
+  .years .firstP::before,
+  .secondP::before,
+  .thirdP:before {
+    margin-top: 1rem;
+  }
+  .secondExp {
+    margin: 3.2rem 0;
+  }
+}

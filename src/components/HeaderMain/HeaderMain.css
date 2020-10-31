@@ -22,7 +22,7 @@
 }
 .myInfo h6 {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.8rem;
   letter-spacing: 3px;
   text-transform: uppercase;
 }
@@ -70,4 +70,37 @@ svg.svg-inline--fa.fa-facebook-square.fa-w-14:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */
   cursor: pointer;
+}
+
+/* media query */
+
+@media screen and (max-width: 576px) {
+  .headerMainContainer {
+    max-width: 80%;
+    padding: 1rem 2rem !important;
+  }
+  .myInfo h1 {
+    font-size: 2.5rem;
+  }
+  .myInfo p {
+    font-size: 0.8rem;
+  }
+  .myInfo h6 {
+    font-size: 0.7rem;
+  }
+  svg.svg-inline--fa.fa-linkedin.fa-w-14,
+  svg.svg-inline--fa.fa-github-square.fa-w-14,
+  svg.svg-inline--fa.fa-medium.fa-w-14,
+  svg.svg-inline--fa.fa-facebook-square.fa-w-14 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .headerMainContainer {
+    max-width: 80% !important;
+    padding: 1rem 2rem !important;
+  }
+}
+@media screen and (min-width: 768px) and(max-width:1000px) {
 }

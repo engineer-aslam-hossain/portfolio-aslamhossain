@@ -5,6 +5,7 @@
   font-size: 2.5rem;
   text-transform: uppercase;
   margin-bottom: 1rem;
+  font-weight: 700;
 }
 .blogHead p {
   color: #777777;
@@ -28,4 +29,14 @@ button.allArticle:focus {
 button.allArticle:hover {
   background: whitesmoke;
   color: #854fee;
+}
+
+@media screen and (max-width: 576px) {
+  .blog {
+    padding: 3rem 1rem;
+  }
+  .blogHead h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
 }

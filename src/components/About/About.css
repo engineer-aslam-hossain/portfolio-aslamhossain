@@ -53,3 +53,20 @@ svg.svg-inline--fa.fa-user-friends.fa-w-20 {
   -webkit-text-fill-color: transparent; */
   color: #766dff;
 }
+
+@media screen and (max-width: 576px) {
+  .col-md-6.aboutMySelf.aos-init.aos-animate {
+    padding: 0 3rem;
+  }
+  .d-flex.justify-content-between {
+    flex-direction: column;
+    align-items: center;
+  }
+  .totalInfo {
+    margin: 1rem 0;
+  }
+  .col-md-6.progressBar.aos-animate {
+    padding: 0 3rem;
+    margin-top: 3rem;
+  }
+}

@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { ProgressBar } from 'react-bootstrap';
 const About = () => {
   return (
-    <section className='about'>
+    <section className='about' id='about'>
       <div className='container'>
         <div className='row'>
           <div
@@ -43,7 +43,7 @@ const About = () => {
             </div>
           </div>
           <div
-            className='col-md-6'
+            className='col-md-6 progressBar'
             data-aos='fade-right'
             data-aos-duration='700'
             data-aos-delay='300'>

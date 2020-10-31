@@ -17,12 +17,12 @@ import { Link } from 'react-router-dom';
 import { Nav } from 'react-bootstrap';
 const HeaderMain = () => {
   return (
-    <section className='header-main'>
+    <section className='header-main' id='home'>
       <div className='container headerMainContainer'>
         <div className='row'>
           <div
             className='col-md-8 myImg'
-            data-aos='zoom-in-up'
+            data-aos='fade-up'
             data-aos-duration='500'
             data-aos-delay='700'>
             <img src={logo} alt='' className='img-fluid' />

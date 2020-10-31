@@ -4,13 +4,13 @@ import SingleProject from '../SingleProject/SingleProject';
 import './Project.css';
 const Project = () => {
   return (
-    <section className='project'>
+    <section className='project' id='project'>
       <div className='container'>
         <div className='projectHeading d-flex flex-column align-items-center'>
           <h2>My latest featured project</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis,
-            placeat.
+            Recently I created some fullstack project and some other react
+            project
           </p>
         </div>
         <div className='row'>

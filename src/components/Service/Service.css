@@ -16,3 +16,27 @@
   color: #777777;
   line-height: 26px;
 }
+
+@media screen and (max-width: 576px) {
+  .service {
+    padding: 2rem;
+  }
+  .serviceHeader h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .singleService {
+    max-width: 85% !important;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .singleService {
+    max-width: 95% !important;
+  }
+  .card-deck {
+    flex-direction: column !important;
+  }
+  .p-4.card.aos-init.aos-animate {
+    margin-bottom: 2rem;
+  }
+}
