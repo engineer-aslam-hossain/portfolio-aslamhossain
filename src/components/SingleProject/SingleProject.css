@@ -45,3 +45,9 @@
   height: 24rem;
   width: 100%;
 }
+
+@media screen and (max-width: 1000px) {
+  .col-md-7.work-pic {
+    width: 95%;
+  }
+}

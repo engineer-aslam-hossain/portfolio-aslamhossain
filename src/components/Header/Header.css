@@ -1,15 +1,14 @@
 .header {
   position: absolute;
   top: 0;
-  right: 0;
+  /* right: 0; */
   left: 0;
-  color: white;
-  transition: all 0.7s ease-in;
+  background: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+  /* width: 100vw !important; */
   max-width: 100vw !important;
 }
 .scrolled {
   position: fixed;
-  top: 0;
   z-index: 1000;
   background: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
 }

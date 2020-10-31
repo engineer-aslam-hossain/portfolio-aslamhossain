@@ -87,3 +87,8 @@ p.blockIcon svg.svg-inline--fa.fa-envelope.fa-w-16 {
     max-width: 92% !important;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .contact-details {
+    margin: 0.5rem;
+  }
+}

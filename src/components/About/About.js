@@ -19,10 +19,11 @@ const About = () => {
             data-aos-delay='300'>
             <h3>About Myself</h3>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae
-              sed, amet beatae quod rerum sequi repellendus voluptatum veritatis
-              ab laboriosam, eaque necessitatibus consequatur sapiente
-              cupiditate?
+              Pulling hair when code doesn't work is a common things to do...
+              I'm a technology explorer and learner. I love to learn new
+              technology and explore them . Becoming a Full-Stack software
+              engineer is my goal. I'm a simply simple person with lots of
+              interests.
             </p>
             <div className='d-flex justify-content-between'>
               <div className='totalInfo'>

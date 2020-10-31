@@ -10,11 +10,10 @@ const Service = () => {
           <div className='serviceHeader d-flex align-items-center justify-content-center flex-column'>
             <h2>offering to my clients</h2>
             <p>
-              I can make just front end or full stack Website for you as per
-              instruction
+              I Do Front-end or Full stack Web-development with High Accuracy
             </p>
           </div>
-          <div className='row'>
+          <div className='row serviceRow'>
             {fakeService.map(service => (
               <SingleService key={service.id} service={service} />
             ))}

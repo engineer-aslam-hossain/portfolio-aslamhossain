@@ -4,6 +4,7 @@ import fakeContacts from '../../fakeData/fakeContacts';
 import './Contact.css';
 import { Form } from 'react-bootstrap';
 const Contact = () => {
+  const windowSize = window.innerWidth;
   return (
     <section className='contact' id='contact'>
       <div className='container'>
@@ -16,9 +17,13 @@ const Contact = () => {
             <div
               className='col-md-4 contact-details d-flex flex-column align-items-center'
               data-aos={
-                (contact.id === 1 && 'fade-up-right') ||
+                (contact.id === 1 && windowSize > 1000
+                  ? 'fade-up-right'
+                  : 'fade-up') ||
                 (contact.id === 2 && 'fade-up') ||
-                (contact.id === 3 && 'fade-up-left')
+                (contact.id === 3 && windowSize > 1000
+                  ? 'fade-up-left'
+                  : 'fade-up')
               }
               data-aos-duration='900'
               data-aos-delay='200'

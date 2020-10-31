@@ -1,6 +1,5 @@
 .header-main {
   background: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-
   min-height: 34rem;
 }
 .headerMainContainer {
@@ -10,11 +9,6 @@
   border-radius: 15px;
   background-color: white;
   z-index: 100;
-  /* box-shadow: 0 2.8px 2.2px rgba(192, 189, 189, 0.034),
-    0 0.7px 0.3px rgba(196, 194, 194, 0.048), 0 0px 35px rgba(0, 0, 0, 0.06),
-    0 22.3px 17.9px rgba(207, 206, 206, 0.072),
-    0 41.8px 33.4px rgba(201, 199, 199, 0.086),
-    0 50px 50px rgba(221, 221, 221, 0.12); */
   box-shadow: 0px 20px 80px 0px rgba(153, 153, 153, 0.3);
 }
 .myImg img.img-fluid {
@@ -96,11 +90,30 @@ svg.svg-inline--fa.fa-facebook-square.fa-w-14:hover {
   }
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   .headerMainContainer {
-    max-width: 80% !important;
+    max-width: 85% !important;
     padding: 1rem 2rem !important;
   }
-}
-@media screen and (min-width: 768px) and(max-width:1000px) {
+  .myInfo h1 {
+    font-size: 2rem !important;
+  }
+  .col-md-8.myImg.aos-init.aos-animate {
+    max-width: 60%;
+  }
+  .col-md-4.myInfo.d-flex.flex-column.justify-content-center.aos-init.aos-animate {
+    max-width: 40%;
+  }
+  .container.headerMainContainer {
+    padding: 3rem 0 !important;
+  }
+  svg.svg-inline--fa.fa-linkedin.fa-w-14,
+  svg.svg-inline--fa.fa-github-square.fa-w-14,
+  svg.svg-inline--fa.fa-medium.fa-w-14,
+  svg.svg-inline--fa.fa-facebook-square.fa-w-14 {
+    font-size: 2.5rem;
+  }
+  .myInfo p {
+    font-size: 0.8rem;
+  }
 }

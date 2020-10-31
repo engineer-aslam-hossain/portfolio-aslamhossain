@@ -7,7 +7,7 @@ const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const handleScroll = () => {
     const offset = window.scrollY;
-    if (offset > 0) {
+    if (offset > 150) {
       setScrolled(true);
     } else {
       setScrolled(false);
@@ -24,7 +24,6 @@ const Header = () => {
   return (
     <header
       className='header container  m-0'
-      id='test'
       data-aos='fade-down'
       data-aos-delay='300'
       data-aos-duration='600'>

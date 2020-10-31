@@ -22,6 +22,8 @@ const Experience = () => {
       .style.setProperty('visibility', 'visible');
   };
 
+  const windowWidth = window.innerWidth;
+
   return (
     <section className='experience'>
       <div className='container'>
@@ -39,7 +41,7 @@ const Experience = () => {
           <div className='experienceDetails  row'>
             <div
               className='col py-5 years mr-5 px-0'
-              data-aos='fade-right'
+              data-aos={windowWidth > 1000 ? 'fade-right' : 'fade-up'}
               data-aos-duration='700'
               data-aos-delay='300'>
               <p className='text-right mt-4 firstP'>March 2017 to present</p>
@@ -49,7 +51,7 @@ const Experience = () => {
             <div className='line col'></div>
             <div
               className='experienceInfo col py-5 detailsInfo'
-              data-aos='fade-left'
+              data-aos={windowWidth > 1000 ? 'fade-left' : 'fade-up'}
               data-aos-duration='700'
               data-aos-delay='300'>
               <div className='firstExp'>
@@ -74,7 +76,7 @@ const Experience = () => {
           <div className='educationDetails  row'>
             <div
               className='col py-5 years mr-5 px-0'
-              data-aos='fade-right'
+              data-aos={windowWidth > 1000 ? 'fade-right' : 'fade-up'}
               data-aos-duration='700'
               data-aos-delay='300'>
               <p className='text-right mt-4 firstP'>May 2018 to present</p>
@@ -84,7 +86,7 @@ const Experience = () => {
             <div className='line col'></div>
             <div
               className='experienceInfo col py-5 detailsInfo'
-              data-aos='fade-left'
+              data-aos={windowWidth > 1000 ? 'fade-left' : 'fade-up'}
               data-aos-duration='900'
               data-aos-delay='400'>
               <div className='firstExp'>

@@ -13,16 +13,16 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './HeaderMain.css';
 import logo from '../../images/aslam.png';
-import { Link } from 'react-router-dom';
-import { Nav } from 'react-bootstrap';
+
 const HeaderMain = () => {
+  const windowSize = window.innerWidth;
   return (
     <section className='header-main' id='home'>
       <div className='container headerMainContainer'>
-        <div className='row'>
+        <div className='row headerMainRow'>
           <div
             className='col-md-8 myImg'
-            data-aos='fade-up'
+            data-aos={windowSize > 1000 ? 'zoom-in' : 'fade-up'}
             data-aos-duration='500'
             data-aos-delay='700'>
             <img src={logo} alt='' className='img-fluid' />
@@ -36,8 +36,8 @@ const HeaderMain = () => {
             <h1>Aslam Hossain</h1>
             <h5>Front end web developer</h5>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-              harum, fugiat nesciunt accusantium facilis adipisci!
+              Currently I'm working with M E R N stack. 40+ Project Complete and
+              have well knowledge in React, MongoDB, Express, Firebase.
             </p>
             <div className='personalInfo'>
               <p>

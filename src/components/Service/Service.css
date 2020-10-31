@@ -40,3 +40,11 @@
     margin-bottom: 2rem;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .row.serviceRow {
+    flex-direction: column;
+  }
+  .col-md-4.singleService.aos-init.aos-animate {
+    max-width: 95% !important;
+  }
+}

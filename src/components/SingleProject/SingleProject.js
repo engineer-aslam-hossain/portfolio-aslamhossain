@@ -4,14 +4,20 @@ import './SingleProject.css';
 const SingleProject = ({ project }) => {
   const { id, name, img, git, live, url, details, client } = project;
 
+  const windowWidth = window.innerWidth;
+
   return (
     <div
       className={`row my-5 singleProject ${id % 2 === 0 && 'flex-row-reverse'}`}
-      data-aos={`${id % 2 === 0 ? 'fade-left' : 'fade-right'}`}
+      data-aos={
+        windowWidth > 1000
+          ? `${id % 2 === 0 ? 'fade-left' : 'fade-right'}`
+          : 'fade-up'
+      }
       data-aos-duration='700'
       data-aos-delay='300'>
       <div className='col-md-7 work-pic'>
-        <a href={url}>
+        <a href={url} target='blank'>
           <img className='img-fluid' src={img} alt='' />
         </a>
       </div>
