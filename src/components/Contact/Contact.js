@@ -1,12 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import fakeContacts from '../../fakeData/fakeContacts';
 import './Contact.css';
 import { Form } from 'react-bootstrap';
+import ParticleCanvas from '../ParticleCanvas/ParticleCanvas';
+import emailjs from 'emailjs-com';
+
 const Contact = () => {
   const windowSize = window.innerWidth;
+  const [successMessage, SetSuccessMessage] = useState(false);
+  const sendEmail = e => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        'gmail',
+        'template_jhgnrpz',
+        e.target,
+        'user_iga3YqlpyPCT5paXEVuVc'
+      )
+      .then(
+        result => {
+          console.log(result.text);
+          if (result) {
+            SetSuccessMessage(true);
+          }
+        },
+        error => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
+
   return (
     <section className='contact' id='contact'>
+      <ParticleCanvas />
       <div className='container'>
         <div className='contactHead d-flex flex-column align-items-center mb-5'>
           <h3>Contact</h3>
@@ -43,14 +72,24 @@ const Contact = () => {
           data-aos-delay='900'>
           <h3 className='text-center'>Have You Something to Say ?</h3>
           <p className='text-center'>Feel free to message me</p>
-          <Form>
+          {successMessage && (
+            <h4 className='text-center text-white'>
+              Your message SuccessFully Send to Aslam
+            </h4>
+          )}
+          <Form onSubmit={sendEmail}>
             <Form.Group controlId='formGroupName'>
-              <Form.Control type='text' placeholder='Enter Your Full Name' />
+              <Form.Control
+                type='text'
+                placeholder='Enter Your Full Name'
+                name='name'
+              />
             </Form.Group>
             <Form.Group controlId='formGroupEmail'>
               <Form.Control
                 type='email'
                 placeholder='Enter your Valid Email '
+                name='email'
               />
             </Form.Group>
             <Form.Group controlId='exampleForm.ControlTextarea1'>
@@ -58,9 +97,12 @@ const Contact = () => {
                 as='textarea'
                 rows={3}
                 placeholder='Write Your Message Here'
+                name='message'
               />
             </Form.Group>
-            <button className='allArticle'>Send</button>
+            <button type='submit' className='allArticle'>
+              Send
+            </button>
           </Form>
         </div>
         <p className='text-center copyRight'>

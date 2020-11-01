@@ -1,11 +1,5 @@
 import React from 'react';
-import {
-  faDatabase,
-  faBook,
-  faUserFriends,
-} from '@fortawesome/free-solid-svg-icons';
 import './About.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { ProgressBar } from 'react-bootstrap';
 const About = () => {
   return (
@@ -25,13 +19,20 @@ const About = () => {
               engineer is my goal. I'm a simply simple person with lots of
               interests.
             </p>
-            <div className='d-flex justify-content-between'>
-              <div className='totalInfo'>
-                <FontAwesomeIcon icon={faDatabase} />
-                <h4>$2.5M</h4>
-                <span>Total Donation</span>
+            <div className='d-flex aboutBtn'>
+              <div className='totalInfo pt-3 mr-3'>
+                <a
+                  href='https://drive.google.com/uc?export=download&id=17sRDN4hhP0RKmVPJNkCYHaS8kGhlMYoA'
+                  target='blank'
+                  className='allArticle'>
+                  resume
+                </a>
               </div>
               <div className='totalInfo'>
+                <button className='allArticle'>Hire me</button>
+              </div>
+
+              {/* <div className='totalInfo'>
                 <FontAwesomeIcon icon={faBook} />
                 <h4>40</h4>
                 <span>Total Project</span>
@@ -40,7 +41,7 @@ const About = () => {
                 <FontAwesomeIcon icon={faUserFriends} />
                 <h4>12300</h4>
                 <span>Total Users</span>
-              </div>
+              </div> */}
             </div>
           </div>
           <div

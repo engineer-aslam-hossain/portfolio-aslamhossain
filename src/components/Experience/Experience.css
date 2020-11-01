@@ -1,10 +1,12 @@
 .experience {
   padding: 8rem 0;
+  z-index: 100;
   background: linear-gradient(to right, #766dff, #88f2ff);
 }
 
 .toggleButtons {
   margin-bottom: 5rem;
+  z-index: 10000000;
 }
 
 .line {
@@ -24,6 +26,7 @@ button.educationBtn {
   width: 12rem;
   height: 3.5rem;
   border-radius: 5px;
+  z-index: 100;
   transition: 0.6s ease;
 }
 button.active {

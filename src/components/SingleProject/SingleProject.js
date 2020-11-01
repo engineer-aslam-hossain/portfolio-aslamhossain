@@ -1,6 +1,7 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './SingleProject.css';
+import ParticleCanvas from '../ParticleCanvas/ParticleCanvas';
 const SingleProject = ({ project }) => {
   const { id, name, img, git, live, url, details, client } = project;
 
@@ -16,6 +17,7 @@ const SingleProject = ({ project }) => {
       }
       data-aos-duration='700'
       data-aos-delay='300'>
+      <ParticleCanvas />
       <div className='col-md-7 work-pic'>
         <a href={url} target='blank'>
           <img className='img-fluid' src={img} alt='' />

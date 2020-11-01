@@ -11,7 +11,8 @@
   color: #777777;
   text-align: center;
 }
-button.allArticle {
+button.allArticle,
+a.allArticle {
   border: none;
   background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
   color: white;
@@ -20,15 +21,17 @@ button.allArticle {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.2px;
-  transition: 1s ease;
+  transition: all 1s ease;
 }
 button.allArticle:focus {
   outline: none;
 }
 
-button.allArticle:hover {
+button.allArticle:hover,
+a.allArticle:hover {
   background: whitesmoke;
   color: #854fee;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 576px) {

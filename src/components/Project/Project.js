@@ -1,10 +1,12 @@
 import React from 'react';
 import fakeProjectData from '../../fakeData/fakeProjectData';
+import ParticleCanvas from '../ParticleCanvas/ParticleCanvas';
 import SingleProject from '../SingleProject/SingleProject';
 import './Project.css';
 const Project = () => {
   return (
     <section className='project' id='project'>
+      <ParticleCanvas />
       <div className='container'>
         <div className='projectHeading d-flex flex-column align-items-center'>
           <h2>My latest featured project</h2>
